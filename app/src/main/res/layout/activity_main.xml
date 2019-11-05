@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ggamstagram"
+        android:fontFamily="@font/billabong"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textSize="50sp"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:maxLength="50"
+        android:layout_below="@+id/tv"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:hint="전화번호, 이메일 주소 또는 사용자 이름"
+        android:inputType="text"
+        android:gravity="left"
+        android:padding="8dp"
+        android:background="@drawable/back_idpass"/>
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:maxLength="30"
+        android:layout_centerInParent="true"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:gravity="left"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/back_idpass"
+        android:layout_below="@+id/et_name"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:layout_below="@+id/et_pass"
+        android:layout_centerInParent="true"
+        android:background="@drawable/back_btn_login"
+        android:layout_marginTop="8dp"
+        android:ems="19"
+        android:onClick="clickLogin"/>
+
+    <TextView
+        android:id="@+id/tv_login_infor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인 상세 정보를 잊으셨나요?"
+        android:layout_below="@+id/loginBtn"
+        android:layout_centerInParent="true"
+        android:textSize="10sp"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인 도움말 보기"
+        android:textSize="10sp"
+        android:layout_toRightOf="@+id/tv_login_infor"
+        android:layout_below="@+id/loginBtn"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/tv_else"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="────────── 또는 ──────────"
+        android:layout_below="@id/tv_login_infor"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_noacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="계정이 없으신가요?"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tv_else"
+        android:textSize="10sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가입하기"
+        android:layout_toRightOf="@id/tv_noacc"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tv_else"
+        android:layout_marginTop="16dp"
+        android:textSize="10sp"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        android:clickable="true"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
